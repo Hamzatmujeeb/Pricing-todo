@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Todo</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/todo-logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <!-- Include FontAwesome once -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<!--Header Html-->
+  <header>
+    <div class="logo">
+        <img src="images/todo-logo.png" alt="logo"> 
+        <h3>todoist</h3>
+    </div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">For Teams</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Log in</a></li>
+            <li><a href="#" class="nav-btn">Start for free</a></li>
+        </ul> 
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+  </header>
+
+<!--JumboTroin Html-->
+  <section class="section">
+    <div class="section-wrapper">
+      <h1 class="wrapper-heading">Choose your path <br>to productivity</h1>
+      <p class="wrapper-paragraph">Use Todoist for free forever or upgrade to unlock our most <br>powerful features for work and collaboration.</p>
+      <button class="btn"><a href="#">Start for free</a></button>
+
+      <div class="review">
+        <p class="review-text">374K+ ★★★★★ <span> review  from</span> </p>
+        <div class="platform-icons">
+            <i class="fa-brands fa-android"></i>
+            <i class="fa-brands fa-apple"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Billing section-->
+  <main>
+    <div class="billing-section">
+       <div class="billing-section-wrapper">
+         <div class="btn-biilin-large-btn">
+            <button class="btn-bilin with-background">Billed Yearly</button>
+            <button class="btn-bilin no-background">Billed Monthly</button>
+         </div>
+
+         <div class="price-in">
+            <h3 class="price-tag">Price in</h3>
+            <select name="price" id="">
+                <option value="USD">USD</option>
+                <option value="USD">USD</option>
+                <option value="USD">USD</option>
+                <option value="USD">USD</option>
+            </select>
+         </div>
+       </div> 
+    </div>
+
+    <div class="main-content">
+      <div class="main-content-wrapper">
+
+         <div class="main-content-column">
+           <img src="images/begginer1.png" alt="begginer1">
+           <h2 class="column-heading">Beginner</h2>
+           <p class="column-paragraph">Start organizing your life for free</p>
+           <div class="price-colun"><sup>us</sup>$0</div>
+           <hr>
+           <h3 class="second-heading">An account with:</h3>
+           <ul>
+            <li>5 personal projects</li>
+            <li>Smart quick add</li>
+            <li>Flexible list & board layouts</li>
+            <li>3 filter views</li>
+            <li>1 week activity history</li>
+            <li>Integrate email, calendar, and more</li>
+           </ul>
+         </div>
+
+         <div class="main-content-column">
+          <img src="images/pro.png" alt="begginer1">
+          <h2 class="column-heading">Pro</h2>
+          <p class="column-paragraph">Organize your work and life</p>
+          <div class="price-colun"><sup>us</sup>$4</div>
+          <hr>
+          <h3 class="second-heading">Everything in Beginner, plus: </h3>
+          <ul>
+           <li>300 personal projects</li>
+           <li>Calendar layout</li>
+           <li>Task reminders & duration</li>
+           <li>150 filter views</li>
+           <li>Unlimited activity history</li>
+           <li>AI Assistant</li>
+          </ul>
+        </div>
+
+        <div class="main-content-column">
+          <img src="images/business.png" alt="begginer1">
+          <h2 class="column-heading">Business</h2>
+          <p class="column-paragraph">Manage your teamwork, too</p>
+          <div class="price-colun"><sup>us</sup>$6</div>
+          <hr>
+          <h3 class="second-heading">Everything in Pro for every member, plus:</h3>
+          <ul>
+           <li>A shared team workspace</li>
+           <li>Up to 500 team projects</li>
+           <li>Calendar layout for team projects</li>
+           <li>Granular team activity logs</li> <!-- Corrected typo -->
+           <li>1000 team members & guests</li>
+           <li>1000 project folder</li>
+           <li>Centralized team billing</li> <!-- Removed duplicate entry -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<!--Compare section-->
+<div class="compare-section"></div>
+<div class="container">
+  <div class="header">
+      <h1>Compare Plans</h1>
+      <a href="#" class="faq-link">
+        <i class="fa-solid fa-book-open"></i> Read the plans FAQ
+    </a>
+    
+  </div>
+
+  <table class="table">
+      <thead>
+          <tr>
+              <th></th>
+              <th>Beginner</th>
+              <th>Pro</th>
+              <th>Business</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td></td>
+              <td>
+                  <div class="price-container">
+                      <div class="plan-price"><sup>US</sup>$0</div>
+                  </div>
+              </td>
+              <td>
+                  <div class="price-container">
+                      <div class="plan-price"><sup>US</sup>$4</div>
+                      <span class="plan-subtext">/month, billed yearly<br>$5 when billed monthly</span>
+                  </div>
+              </td>
+              <td>
+                  <div class="price-container">
+                      <div class="plan-price"><sup>US</sup>$6</div>
+                      <span class="plan-subtext">/user/month, billed yearly<br>$8 when billed monthly</span>
+                  </div>
+              </td>
+          </tr>
+          
+          <tr class="section-row">
+              <td class="section-titles">Essentials</td>
+              <td>Beginner</td>
+              <td>Pro</td>
+              <td>Business</td>
+          </tr>
+          <tr>
+              <td>Personal projects <span class="info-icon">?</span></td>
+              <td class="black">5</td>
+              <td class="black">300</td>
+              <td class="black">300 for each member</td>
+          </tr>
+          <tr>
+              <td>
+                  <span class="content">Task reminders</span>
+                  <span class="info-icon">?</span>
+              </td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+              <td>Priority levels <span class="info-icon">?</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+              <td>Sub-tasks <span class="info-icon">?</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+              <td>Task reminders <span class="info-icon">?</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+              <td>File uploads <span class="info-icon">?</span></td>
+              <td class="black">5 MB</td>
+              <td class="black">100 MB</td>
+              <td class="black">100 MB</td>
+          </tr>
+
+          <tr class="section-row">
+              <td class="section-titles">Task views</td>
+              <td>Beginner</td>
+              <td>Pro</td>
+              <td>Business</td>
+          </tr>
+          <tr>
+              <td>List layout<span class="info-icon">?</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+              <td>Board layout<span class="info-icon">?</span></td>
+              <td class="black"><span class="checkmark">&#10003;</span></td>
+              <td class="black">In label, filter, and personal project views</td>
+              <td class="black">In team projects, too</td>
+          </tr>
+          <tr>
+              <td>Calendar layout<span class="info-icon">?</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+              <td>Custom fliters<span class="info-icon">?</span></td>
+              <td class="black">3</td>
+              <td class="black">150</td>
+              <td class="black">150 for each member</td>
+          </tr>
+    <!--Collaboration-->
+
+          <tr class="section-row">
+            <td class="section-titles">Collaboration</td>
+            <td>Beginner</td>
+            <td>Pro</td>
+            <td>Business</td>
+        </tr>
+        <tr>
+            <td>People per personal<span class="info-icon">?</span></td>
+            <td class="black">5</td>
+            <td class="black">5</td>
+            <td class="black">5</td>
+        </tr>
+        <tr>
+            <td>Comments<span class="info-icon">?</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+        </tr>
+        <tr>
+            <td>Assigned tasks<span class="info-icon">?</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+        </tr>
+        <tr>
+            <td>A team workspace<span class="info-icon">?</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="checkmark">&#10003;</span></td>
+        </tr>
+        <tr>
+            <td>Team activity<span class="info-icon">?</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="checkmark">&#10003;</span></td>
+        </tr>
+        <tr>
+          <td>Team projects <span class="info-icon">?</span></td>
+          <td></td>
+          <td></td>
+          <td class="black">250</td>
+      </tr>
+       <tr>
+            <td>People per team project<span class="info-icon">?</span></td>
+            <td></td>
+            <td class="black"></td>
+            <td class="black">Up to 500 *</td>
+        </tr>
+        <tr>
+          <td>Project templates<span class="info-icon">?</span></td>
+          <td><span class="checkmark">&#10003;</span></td>
+          <td><span class="checkmark">&#10003;</span></td>
+          <td class="black">Shared templates, too</td>
+        </tr>
+        <tr>
+          <td>Team members<span class="info-icon">?</span></td>
+          <td></td>
+          <td></td>
+          <td class="black">1000</td>
+       </tr>
+       <tr>
+        <td>Team guests<span class="info-icon">?</span></td>
+        <td></td>
+        <td></td>
+        <td class="black">1000</td>
+      </tr>
+      <tr>
+        <td>Team project folders<span class="info-icon">?</span></td>
+        <td></td>
+        <td></td>
+        <td><span class="checkmark">&#10003;</span></td>
+      </tr>
+      <tr>
+        <td>Team roles & permissions<span class="info-icon">?</span></td>
+        <td></td>
+        <td></td>
+        <td><span class="checkmark">&#10003;</span></td>
+      </tr>
+        <tr>
+            <td>Centralized team biling<span class="info-icon">?</span></td>
+            <td></td>
+           <td></td>
+           <td><span class="checkmark">&#10003;</span></td>
+        </tr>
+
+      </tr>
+      <!--Advance-->
+  
+            <tr class="section-row">
+              <td class="section-titles">Advanced</td>
+              <td>Beginner</td>
+              <td>Pro</td>
+              <td>Business</td>
+          </tr>
+          <tr>
+              <td>Recurring due dates<span class="info-icon">?</span></td>
+              <td class="black">5</td>
+              <td class="black">300</td>
+              <td class="black">300 for each member</td>
+          </tr>
+          <tr>
+              <td>Label<span class="info-icon">?</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+              <td>Task descriptions<span class="info-icon">?</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+              <td>Productivity visualizations<span class="info-icon">?</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+              <td>90+ integration<span class="info-icon">?</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+            <td>Team projects <span class="info-icon">?</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+        </tr>
+         <tr>
+              <td>Custom Reminder<span class="info-icon">?</span></td>
+              <td></td>
+              <td><span class="checkmark">&#10003;</span></td>
+              <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+            <td>Task duration<span class="info-icon">?</span></td>
+            <td></td>
+            <td><span class="checkmark">&#10003;</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+          </tr>
+          <tr>
+            <td>AI assistant<span class="info-icon">?</span></td>
+            <td></td>
+            <td><span class="checkmark">&#10003;</span></td>
+            <td><span class="checkmark">&#10003;</span></td>
+         </tr>
+         <tr>
+          <td>Auto backups<span class="info-icon">?</span></td>
+          <td></td>
+          <td><span class="checkmark">&#10003;</span></td>
+          <td><span class="checkmark">&#10003;</span></td>
+        </tr>
+        <tr>
+          <td>Activity history<span class="info-icon">?</span></td>
+          <td class="black">1 week</td>
+          <td class="black">Unlimited</td>
+          <td class="black">Unlimited</td>
+        </tr>
+        <tr>
+          <td>Themes<span class="info-icon">?</span></td>
+          <td class="black">4</td>
+          <td class="black">8</td>
+          <td class="black">8</td>
+        </tr>
+          <tr>
+              <td>SOC2 certification<span class="info-icon">?</span></td>
+              <td></td>
+             <td></td>
+             <td><a href="#">Share your compliance requirements</a></td>
+          </tr>
+          <tr>
+            
+        </tr>
+      </tbody>
+  </table>
+
+  <div class="center-container">
+    <h2 class="team">Team of 10 or more? <a href="">Book a Todoist Business demo</a> with Marco and Dermot (English only)</h2>
+  </div>
+</div>
+</div>
+</div>
+   
+<main class="footer">
+ <div class="footer-top">
+  <div class="main-footer-img-logo">
+    <img src="images/apple.png" alt="" class="grayscale-img">
+    <img src="images/apple.png" alt="" class="grayscale-img img-up">
+    <img src="images/apple.png" alt="" class="grayscale-img">
+</div>
+
+
+  <div class="joinus-section">
+    <h1 class="joinus-title">Join 30 million+ people who rely <br> on Todoist to manage work and life</h1>
+    <p class="joinus-paragragh">Plus tens of thousands of teams from companies of all sizes.</p>
+  </div>
+
+  <div class="btn-buyfee">
+    <button class="btn"><a href="#">Start for free</a></button>
+  </div>
+  
+  <div class="faq-container">
+    <i class="fa-solid fa-book-open"></i> 
+    <h4 class="read-faq">Read the plans FAQ</h4>
+  </div>
+  </div>
+
+
+  <hr class="ruling">
+ 
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="logo-container">
+        <div class="logo-header">
+            <img src="images/todo-logo.png" alt="Todoist logo" class="logo">
+            <h4>TODO LIST</h4>
+        </div>
+        <p class="footer-p">Join millions of people who organize<br> work and life with Todoist.</p>
+    </div>
+    
+    
+        
+        <div class="footer-column">
+            <h4>Features</h4>
+            <ul>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">For Teams</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Templates</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+                <li><a href="#">Download Apps</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Productivity Methods</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Channel Partners</a></li>
+                <li><a href="#">Developer API</a></li>
+                <li><a href="#">Status</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Inspiration Hub</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Twist</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-social">
+            <ul>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</main>
+<script src="JS/main.js"></script>
+</body>
+</html>
